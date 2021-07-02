@@ -27,7 +27,7 @@ def ImgCali(img=None, gpxname=None, updateImgVals=None):
                                       'calibdmin' : 0.85,}
     
     # set controls and vary options, then initial fit
-    img.setCalibrant('LaB6  SRM660c')
+    img.setCalibrant('--- TPS19A  LaB6  SRM660c ---')
     img.setVary('*',False)
     img.setVary(['det-X', 'det-Y', 'dist', 'tilt', 'phi'], True)
     img.setControls(updateImgVals)
